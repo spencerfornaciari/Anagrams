@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8978B4CC18E393D300313D10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8978B4CB18E393D300313D10 /* Foundation.framework */; };
+		8978B4CE18E393D300313D10 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8978B4CD18E393D300313D10 /* CoreGraphics.framework */; };
+		8978B4D018E393D300313D10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8978B4CF18E393D300313D10 /* UIKit.framework */; };
+		8978B4D618E393D400313D10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8978B4D418E393D400313D10 /* InfoPlist.strings */; };
+		8978B4D818E393D400313D10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8978B4D718E393D400313D10 /* main.m */; };
+		8978B4DC18E393D400313D10 /* SFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8978B4DB18E393D400313D10 /* SFAppDelegate.m */; };
+		8978B4DF18E393D400313D10 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8978B4DD18E393D400313D10 /* Main_iPhone.storyboard */; };
+		8978B4E218E393D400313D10 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8978B4E018E393D400313D10 /* Main_iPad.storyboard */; };
+		8978B4E518E393D400313D10 /* SFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8978B4E418E393D400313D10 /* SFViewController.m */; };
+		8978B4E718E393D400313D10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8978B4E618E393D400313D10 /* Images.xcassets */; };
+		8978B4EE18E393D400313D10 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8978B4ED18E393D400313D10 /* XCTest.framework */; };
+		8978B4EF18E393D400313D10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8978B4CB18E393D300313D10 /* Foundation.framework */; };
+		8978B4F018E393D400313D10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8978B4CF18E393D300313D10 /* UIKit.framework */; };
+		8978B4F818E393D400313D10 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8978B4F618E393D400313D10 /* InfoPlist.strings */; };
+		8978B4FA18E393D400313D10 /* AnagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8978B4F918E393D400313D10 /* AnagramTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8978B4F118E393D400313D10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8978B4C018E393D300313D10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8978B4C718E393D300313D10;
+			remoteInfo = Anagram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8978B4C818E393D300313D10 /* Anagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8978B4CB18E393D300313D10 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8978B4CD18E393D300313D10 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8978B4CF18E393D300313D10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8978B4D318E393D400313D10 /* Anagram-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Anagram-Info.plist"; sourceTree = "<group>"; };
+		8978B4D518E393D400313D10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8978B4D718E393D400313D10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8978B4D918E393D400313D10 /* Anagram-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Anagram-Prefix.pch"; sourceTree = "<group>"; };
+		8978B4DA18E393D400313D10 /* SFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppDelegate.h; sourceTree = "<group>"; };
+		8978B4DB18E393D400313D10 /* SFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAppDelegate.m; sourceTree = "<group>"; };
+		8978B4DE18E393D400313D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		8978B4E118E393D400313D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		8978B4E318E393D400313D10 /* SFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFViewController.h; sourceTree = "<group>"; };
+		8978B4E418E393D400313D10 /* SFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFViewController.m; sourceTree = "<group>"; };
+		8978B4E618E393D400313D10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8978B4EC18E393D400313D10 /* AnagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8978B4ED18E393D400313D10 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8978B4F518E393D400313D10 /* AnagramTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnagramTests-Info.plist"; sourceTree = "<group>"; };
+		8978B4F718E393D400313D10 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8978B4F918E393D400313D10 /* AnagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnagramTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8978B4C518E393D300313D10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8978B4CE18E393D300313D10 /* CoreGraphics.framework in Frameworks */,
+				8978B4D018E393D300313D10 /* UIKit.framework in Frameworks */,
+				8978B4CC18E393D300313D10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8978B4E918E393D400313D10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8978B4EE18E393D400313D10 /* XCTest.framework in Frameworks */,
+				8978B4F018E393D400313D10 /* UIKit.framework in Frameworks */,
+				8978B4EF18E393D400313D10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8978B4BF18E393D300313D10 = {
+			isa = PBXGroup;
+			children = (
+				8978B4D118E393D300313D10 /* Anagram */,
+				8978B4F318E393D400313D10 /* AnagramTests */,
+				8978B4CA18E393D300313D10 /* Frameworks */,
+				8978B4C918E393D300313D10 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8978B4C918E393D300313D10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8978B4C818E393D300313D10 /* Anagram.app */,
+				8978B4EC18E393D400313D10 /* AnagramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8978B4CA18E393D300313D10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8978B4CB18E393D300313D10 /* Foundation.framework */,
+				8978B4CD18E393D300313D10 /* CoreGraphics.framework */,
+				8978B4CF18E393D300313D10 /* UIKit.framework */,
+				8978B4ED18E393D400313D10 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8978B4D118E393D300313D10 /* Anagram */ = {
+			isa = PBXGroup;
+			children = (
+				8978B4DA18E393D400313D10 /* SFAppDelegate.h */,
+				8978B4DB18E393D400313D10 /* SFAppDelegate.m */,
+				8978B4DD18E393D400313D10 /* Main_iPhone.storyboard */,
+				8978B4E018E393D400313D10 /* Main_iPad.storyboard */,
+				8978B4E318E393D400313D10 /* SFViewController.h */,
+				8978B4E418E393D400313D10 /* SFViewController.m */,
+				8978B4E618E393D400313D10 /* Images.xcassets */,
+				8978B4D218E393D400313D10 /* Supporting Files */,
+			);
+			path = Anagram;
+			sourceTree = "<group>";
+		};
+		8978B4D218E393D400313D10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8978B4D318E393D400313D10 /* Anagram-Info.plist */,
+				8978B4D418E393D400313D10 /* InfoPlist.strings */,
+				8978B4D718E393D400313D10 /* main.m */,
+				8978B4D918E393D400313D10 /* Anagram-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8978B4F318E393D400313D10 /* AnagramTests */ = {
+			isa = PBXGroup;
+			children = (
+				8978B4F918E393D400313D10 /* AnagramTests.m */,
+				8978B4F418E393D400313D10 /* Supporting Files */,
+			);
+			path = AnagramTests;
+			sourceTree = "<group>";
+		};
+		8978B4F418E393D400313D10 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8978B4F518E393D400313D10 /* AnagramTests-Info.plist */,
+				8978B4F618E393D400313D10 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8978B4C718E393D300313D10 /* Anagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8978B4FD18E393D400313D10 /* Build configuration list for PBXNativeTarget "Anagram" */;
+			buildPhases = (
+				8978B4C418E393D300313D10 /* Sources */,
+				8978B4C518E393D300313D10 /* Frameworks */,
+				8978B4C618E393D300313D10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Anagram;
+			productName = Anagram;
+			productReference = 8978B4C818E393D300313D10 /* Anagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8978B4EB18E393D400313D10 /* AnagramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8978B50018E393D400313D10 /* Build configuration list for PBXNativeTarget "AnagramTests" */;
+			buildPhases = (
+				8978B4E818E393D400313D10 /* Sources */,
+				8978B4E918E393D400313D10 /* Frameworks */,
+				8978B4EA18E393D400313D10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8978B4F218E393D400313D10 /* PBXTargetDependency */,
+			);
+			name = AnagramTests;
+			productName = AnagramTests;
+			productReference = 8978B4EC18E393D400313D10 /* AnagramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8978B4C018E393D300313D10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Spencer Fornaciari";
+				TargetAttributes = {
+					8978B4EB18E393D400313D10 = {
+						TestTargetID = 8978B4C718E393D300313D10;
+					};
+				};
+			};
+			buildConfigurationList = 8978B4C318E393D300313D10 /* Build configuration list for PBXProject "Anagram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8978B4BF18E393D300313D10;
+			productRefGroup = 8978B4C918E393D300313D10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8978B4C718E393D300313D10 /* Anagram */,
+				8978B4EB18E393D400313D10 /* AnagramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8978B4C618E393D300313D10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8978B4E218E393D400313D10 /* Main_iPad.storyboard in Resources */,
+				8978B4E718E393D400313D10 /* Images.xcassets in Resources */,
+				8978B4DF18E393D400313D10 /* Main_iPhone.storyboard in Resources */,
+				8978B4D618E393D400313D10 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8978B4EA18E393D400313D10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8978B4F818E393D400313D10 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8978B4C418E393D300313D10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8978B4D818E393D400313D10 /* main.m in Sources */,
+				8978B4E518E393D400313D10 /* SFViewController.m in Sources */,
+				8978B4DC18E393D400313D10 /* SFAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8978B4E818E393D400313D10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8978B4FA18E393D400313D10 /* AnagramTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8978B4F218E393D400313D10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8978B4C718E393D300313D10 /* Anagram */;
+			targetProxy = 8978B4F118E393D400313D10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8978B4D418E393D400313D10 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8978B4D518E393D400313D10 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8978B4DD18E393D400313D10 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8978B4DE18E393D400313D10 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		8978B4E018E393D400313D10 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8978B4E118E393D400313D10 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		8978B4F618E393D400313D10 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8978B4F718E393D400313D10 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8978B4FB18E393D400313D10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8978B4FC18E393D400313D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8978B4FE18E393D400313D10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Anagram/Anagram-Prefix.pch";
+				INFOPLIST_FILE = "Anagram/Anagram-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8978B4FF18E393D400313D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Anagram/Anagram-Prefix.pch";
+				INFOPLIST_FILE = "Anagram/Anagram-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8978B50118E393D400313D10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Anagram.app/Anagram";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Anagram/Anagram-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AnagramTests/AnagramTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8978B50218E393D400313D10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Anagram.app/Anagram";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Anagram/Anagram-Prefix.pch";
+				INFOPLIST_FILE = "AnagramTests/AnagramTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8978B4C318E393D300313D10 /* Build configuration list for PBXProject "Anagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8978B4FB18E393D400313D10 /* Debug */,
+				8978B4FC18E393D400313D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8978B4FD18E393D400313D10 /* Build configuration list for PBXNativeTarget "Anagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8978B4FE18E393D400313D10 /* Debug */,
+				8978B4FF18E393D400313D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8978B50018E393D400313D10 /* Build configuration list for PBXNativeTarget "AnagramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8978B50118E393D400313D10 /* Debug */,
+				8978B50218E393D400313D10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8978B4C018E393D300313D10 /* Project object */;
+}
