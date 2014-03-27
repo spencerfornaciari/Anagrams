@@ -24,11 +24,19 @@
     NSString *str1 = @"muTiLaTe";
     NSString *str2 = @"UltImatE";
     NSString *str3 = @"asfds";
+    NSString *str7 = @"ASDF";
     NSString *str4 = @"Dictionary";
     NSString *str5 = @"Indicatory";
+    NSString *str6 = @"abcdefghijklmnopqrstuvwxyza";
+    
+//    [self checkForRepetition:str6];
+    
+    [self reverseString:str3];
+    [self reverseString:str7];
+
     
     
-    [self anagramComparisonStringOne:str1 andStringTwo:str2];
+//    [self anagramComparisonStringOne:str1 andStringTwo:str2];
     
 //    NSString *string1 = [self anagramSort:str1];
 //    NSString *string2 = [self anagramSort:str2];
@@ -54,6 +62,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Compare strings for anagrams
 
 -(void)anagramComparisonStringOne:(NSString *)stringOne andStringTwo:(NSString *)stringTwo
 {
@@ -100,6 +110,72 @@
     }
     
     return arr;
+}
+
+#pragma mark - Check for repition
+
+-(void)checkForRepetition:(NSString *)string
+{
+    BOOL repeat = FALSE;
+    
+    for (int q=0; q < string.length; q++) {
+        NSString *tmp_string = [string substringWithRange:NSMakeRange(q, 1)];
+        int asciiCode2 = [tmp_string characterAtIndex:0];
+        NSLog(@"Original: %d", asciiCode2);
+
+        for (int i = 0; i< string.length; i++) {
+            NSString *tmp_str = [string substringWithRange:NSMakeRange(i, 1)];
+            int asciiCode = [tmp_str characterAtIndex:0];
+            NSLog(@"Test: %d", asciiCode);
+            if (asciiCode2 == asciiCode && q != i) {
+                repeat = TRUE;
+            }
+            
+        }
+        
+        
+    }
+    
+    NSLog(@"%hhd", repeat);
+}
+
+#pragma mark - Reverse String
+
+-(void)reverseString:(NSString *)string
+{
+    NSMutableArray *array = [NSMutableArray new];
+    for (int i = 0; i < string.length; i++) {
+        NSString *temp = [string substringWithRange:NSMakeRange(i, 1)];
+        [array addObject:temp];
+    }
+    
+//    NSLog(@"%@ - and count, %d", array, array.count);
+    
+    for (int j = 0; j < string.length / 2; j++) {
+//        NSLog(@"%@", array[j]);
+//        
+//        NSLog(@"%d", string.length - j);
+        NSString *temp = array[string.length-(j+1)];
+        array[string.length-(j+1)] = array[j];
+        array[j] = temp;
+        
+    }
+    
+    NSLog(@"%@", array);
+    
+//    if (string.length % 2 == 0) {
+//       
+//    } else {
+//        for (int j = 0; j < string.length / 2; j++) {
+//            NSString *temp = array[string.length-j];
+//            array[string.length-j] = array[j];
+//            array[j] = temp;
+//            
+//        }
+//    }
+    
+    NSLog(@"%@", array);
+    
 }
 
 -(BOOL)anagramsWithString:(NSString*)a andString:(NSString*)b
